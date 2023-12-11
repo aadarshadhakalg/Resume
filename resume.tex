@@ -1,0 +1,167 @@
+
+\documentclass[a4paper,8pt]{article}
+
+\usepackage{parskip} 
+\usepackage{hologo}
+\usepackage{fontspec}
+
+%other packages for formatting
+\RequirePackage{color}
+\RequirePackage{graphicx}
+\usepackage[usenames,dvipsnames]{xcolor}
+\usepackage[scale=0.9, top=.4in, bottom=.4in]{geometry}
+
+%tabularx environment
+\usepackage{tabularx}
+
+%for lists within experience section
+\usepackage{enumitem}
+
+% centered version of 'X' col. type
+\newcolumntype{C}{>{\centering\arraybackslash}X} 
+
+%to prevent spillover of tabular into next pages
+\usepackage{supertabular}
+\usepackage{tabularx}
+\newlength{\fullcollw}
+\setlength{\fullcollw}{0.42\textwidth}
+
+%custom \section
+\usepackage{titlesec}				
+\usepackage{multicol}
+\usepackage{multirow}
+
+%CV Sections inspired by: 
+%http://stefano.italians.nl/archives/26
+\titleformat{\section}{\Large\scshape\raggedright}{}{0em}{}[\titlerule]
+\titlespacing{\section}{1pt}{2pt}{2pt}
+
+%for publications
+\usepackage[style=authoryear,sorting=ynt, maxbibnames=2]{biblatex}
+
+%Setup hyperref package, and colours for links
+\usepackage[unicode, draft=false]{hyperref}
+\color[HTML]{110223}%{1C033C}
+\addbibresource{citations.bib}
+\setlength\bibitemsep{1em}
+
+%for social icons
+\usepackage{fontawesome5}
+% \usepackage{times}
+
+% For underline
+\usepackage[normalem]{ulem}
+
+\setmainfont{Liberation Sans}  % Set it to whatever you like
+
+\begin{document}
+
+% non-numbered pages
+\pagestyle{empty} 
+
+\begin{tabularx}{\linewidth}{@{} C @{}}
+\Huge{Aadarsha Dhakal} \\[6pt]
+\end{tabularx}
+
+\begin{tabularx}{\linewidth}{@{} C @{} C @{} C}
+{{\raisebox{-0.05\height}{\faEnvelope} aadarshadhakal01@gmail.com}} 
+{{\raisebox{-0.05\height}{\faMobile} +977 9869698962}} 
+{{\href{https://www.linkedin.com/in/aadarshadhakalg}{\raisebox{-0.05\height}{\faLinkedin} https://www.linkedin.com/in/aadarshadhakalg}}}
+\end{tabularx}
+
+%EDUCATION
+\section{\textbf{EDUCATION}}
+\begin{tabularx}{\linewidth}{ @{}l r@{}}
+\textbf{KATHMANDU UNIVERSITY} \hfill \textbf{Aug 2019 - present} \\[4pt]
+\textbf{Bachelor of Computer Engineering}\\[4pt]
+\end{tabularx}
+
+%EXPERIENCE
+\section{\textbf{EXPERIENCE}}
+\begin{tabularx}{\linewidth}{ @{}l r@{} }
+\textbf{\underline{\href{https://www.upwork.com/freelancers/~01c6b4be63acb73e89}{Upwork}}} - Remote \hfill \textbf{Apr 2021 - present} \\[4pt]
+\textbf{Flutter Developer - Top Rated} (Apr 2021 - present) \\[4pt]
+\begin{minipage}[t]{\linewidth}
+    \begin{itemize}[nosep,after=\strut, leftmargin=1em, itemsep=2pt]
+        \item Achieved a remarkable 100-fold reduction in deployment time through the implementation of CI/CD practices, significantly accelerating the delivery of updates to the Flutter Application
+        \item Elevated features and deployed a secure PHP-based Learning Management System
+    \end{itemize}
+\end{minipage}
+\end{tabularx}
+
+\begin{tabularx}{\linewidth}{ @{}l r@{} }
+\textbf{Ahaan Technology} - Remote (Australia) \hfill \textbf{June 2021 - Apr 2021} \\[4pt]
+\textbf{Trainee} \\[4pt]
+\begin{minipage}[t]{\linewidth}
+    \begin{itemize}[nosep,after=\strut, leftmargin=1em, itemsep=2pt]
+        \item Successfully deployed Matrix server using Docker on Azure Virtual Machines
+    \end{itemize}
+\end{minipage}
+\end{tabularx}
+
+% ACADEMIC PROJECTS
+\section{\textbf{PROJECTS}}
+\begin{tabularx}{\linewidth}{ @{}l r@{} }
+\textbf{\underline{\href{https://github.com/aadarshadhakalg/dart-server-starter}{Dart Server Starter}}} \\[4pt]
+\textbf{2021} \\[4pt]
+\begin{minipage}[t]{\linewidth}
+    \begin{itemize}[nosep,after=\strut, leftmargin=1em, itemsep=2pt]
+        \item Developed a starter project code for a server project using Dart programming language and containerized the application, optimizing portability and scalability through containerization technologies.
+        \item Dart Programming Language, Docker
+    \end{itemize}
+\end{minipage}
+\end{tabularx}
+
+\begin{tabularx}{\linewidth}{ @{}l r@{} }
+\textbf{\underline{\href{https://github.com/aadarshadhakalg/flutter_screenshotx}{Flutter Screenshot}}} \\[4pt]
+\textbf{2023} \\[4pt]
+\begin{minipage}[t]{\linewidth}
+    \begin{itemize}[nosep,after=\strut, leftmargin=1em, itemsep=2pt]
+        \item Developed a Flutter plugin to take screenshot in Linux
+        \item Flutter, Dbus, Linux, Dart
+    \end{itemize}
+\end{minipage}
+\end{tabularx}
+
+\begin{tabularx}{\linewidth}{ @{}l r@{} }
+\textbf{\underline{\href{https://github.com/aadarshadhakalg/Dart-Playground}{Dart Playground}}} \\[4pt]
+\textbf{2021} \\[4pt]
+\begin{minipage}[t]{\linewidth}
+    \begin{itemize}[nosep,after=\strut, leftmargin=1em, itemsep=2pt]
+        \item \#30daysofAppwrite Winner Project
+        \item Developed a simple IDE app to write and compile dart code from Android smartphone devices.
+        \item Flutter, Appwrite, Cloud Functions, Dart
+    \end{itemize}
+\end{minipage}
+\end{tabularx}
+
+% EXTRA-CURRICULAR ACTIVITIES / LEADERSHIP ROLES
+\section{\textbf{EXTRA-CURRICULAR ACTIVITIES / LEADERSHIP ROLES}}
+\begin{tabularx}{\linewidth}{ @{}l r@{} }
+\textbf{\underline{\href{https://kuosc.org.np}{Kathmandu University Open Source Community}}} \\[4pt]
+\textbf{2023} \\[4pt]
+\textbf{Community Lead} \\[4pt]
+\begin{minipage}[t]{\linewidth}
+    \begin{itemize}[nosep,after=\strut, leftmargin=1em, itemsep=2pt]
+        \item Led 10+ workshops, 3+ bootcamps, and Software Freedom Day, fostering a dynamic community of 1000+ active members. Doubled community reach in 6 months, spearheading national and international collaborations for enhanced engagement and knowledge-sharing.
+    \end{itemize}
+\end{minipage}
+\end{tabularx}
+
+%ADDITIONAL
+\section{\textbf{ADDITIONAL}}
+\begin{minipage}[t]{\linewidth}
+    \begin{itemize}[nosep,after=\strut, leftmargin=1em, itemsep=2pt]
+        \item Participated in 10 hours workshop on AWS Cloud Computing offered by Genese Academy
+        \item Technical Skills: Dart, Flutter, Python, AWS, Azure, Linux 
+        \item Language Skills: English (Business Professional), Nepali (Native), Hindi (Conversational)
+        \item HeNN Volunteer: E-Library Deployment Project (2022 - present) 
+        \item Top 16, Huawei Seeds for the Future CSR Program
+        \item Presented on topic "\underline{\href{https://www.youtube.com/watch?v=9e-R4zM3XhA}{Get Started with Vim Text Editor}}", Linux Talk 2021, organized by KUOSC
+        \item Presented on topic "\underline{\href{https://www.youtube.com/watch?v=fx1BG-Mudko}{Demystifying Widget Rendering in Flutter}}", Flutter Meetup
+        \item Facilitator at Flutter Bootcamp organized by Code for Change Nepal at New Summit College, Kathmandu
+        \item Judge, IT Meet 2023 - Mobile Rush Event
+    \end{itemize}
+\end{minipage}
+
+\end{document}
